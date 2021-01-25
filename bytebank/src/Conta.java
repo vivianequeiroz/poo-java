@@ -8,4 +8,5 @@ public class Conta {
 }
 
 // conta attributes 
-// Java automatically them initializes with zero or null
+// specification for creating objects
+// Java automatically initializes them with zero or null
