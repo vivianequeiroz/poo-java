@@ -5,6 +5,13 @@ public class Conta {
 	private Cliente titular;
 	//atributes 
 	
+	public Conta(int agencia, int numero) {
+		this.agencia = agencia; 
+		this.numero = numero;
+		System.out.println("Estou criando uma conta " + this.numero);
+	}	
+	// Constructors can require minimal attributes/restrictions to build an object
+	
 	public void deposita(double valor) {
 		this.saldo += valor;
 	}
@@ -38,6 +45,10 @@ public class Conta {
 	}
 	
 	public void setNumero(int numero) {
+		if(numero <= 0) {
+			System.out.println("Não é possível valor menor ou igual a 0");
+			return; //void
+		}
 		this.numero = numero;
 	}
 	
@@ -46,6 +57,10 @@ public class Conta {
 	}
 	
 	public void setAgencia(int agencia) {
+		if(agencia <= 0) { 
+			System.out.println("Não é possível valor menor ou igual a 0");
+			return; //void
+		}
 		this.agencia = agencia;
 	}
 	
