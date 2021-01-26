@@ -14,7 +14,5 @@ public class TestaValores {
 		
 		System.out.println(Conta.getTotal());
 							// method from the class Conta, so a reference at the left side is not necessary
-
 	}
-
 }
