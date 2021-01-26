@@ -3,12 +3,17 @@ public class Conta {
 	private int agencia;
 	private int numero;
 	private Cliente titular;
-	//atributes 
+	//atributes from the instance
+	private static int total; 
+	// total from the class
 	
 	public Conta(int agencia, int numero) {
+		Conta.total++;
+	//	System.out.println("O total de contas é: " + Conta.total);
+		
 		this.agencia = agencia; 
 		this.numero = numero;
-		System.out.println("Estou criando uma conta " + this.numero);
+	//	System.out.println("Estou criando uma conta " + this.numero);
 	}	
 	// Constructors can require minimal attributes/restrictions to build an object
 	
@@ -71,6 +76,11 @@ public class Conta {
 	public Cliente getTitular() {
 		return titular;
 	}
+	
+	public static int getTotal() {
+		return Conta.total;
+	} //method from the class
+	  //this is not used
 
 	//methods
 }

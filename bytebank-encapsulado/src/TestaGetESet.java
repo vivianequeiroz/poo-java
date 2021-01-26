@@ -28,9 +28,4 @@ public class TestaGetESet {
 		System.out.println(viviane);
 		System.out.println(conta.getTitular());
 	}
-	
-	
-	
-	
-
 }
