@@ -1,14 +1,14 @@
 
 public class Pessoa {
 	public String cpf;
-	public String nome; 
+	public static String nome; 
 	
 	public Pessoa(String _cpf, String _nome) {
-		cpf = _cpf;
-		nome = _nome;
+		this.cpf = _cpf;
+		this.nome = _nome;
 		
+		System.out.println("-----------------------------------------------------");
 		System.out.printf("O nome da pessoa cadastrada no sistema é: %s \n", nome);
-		System.out.printf("O CPF dela é: %s  \n", cpf);
 	}
 
 
