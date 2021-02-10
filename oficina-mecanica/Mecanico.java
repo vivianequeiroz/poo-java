@@ -1,11 +1,14 @@
 
-public class Mecanico { 
+public class Mecanico extends Pessoa { 
 	private String especialidade; 
 	
-	public Mecanico(String esp) {
+	public Mecanico(String _cpf, String _nome, String esp) {
+		super(_cpf, _nome); 
 		especialidade = esp; 
 		
-		System.out.printf("A especialidade do mecanico é: %s", this);
+		System.out.println("Consta como >>> mecânico responsável <<<");
+		System.out.printf("A especialidade é: %s \n", esp);
+		
 	}
 	
 	public String toString() {
