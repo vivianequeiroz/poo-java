@@ -8,7 +8,11 @@ public class Fluxo {
 
     private static void metodo1() {
         System.out.println("Ini do metodo1");
-        metodo2();
+        try {
+        	  metodo2();
+        } catch(ArithmeticException ex) {
+        	System.out.println("ArithmeticExecption");
+        }
         System.out.println("Fim do metodo1");
     }
 
@@ -16,12 +20,7 @@ public class Fluxo {
         System.out.println("Ini do metodo2");
         for(int i = 1; i <= 5; i++) {
             System.out.println(i);
-            try { 
-            	int a = i / 0;
-            } catch(ArithmeticException ex) {
-            	System.out.println("ArithmeticExecption");
-            }
-            
+            	int a = i / 0; 
         }
         System.out.println("Fim do metodo2");
     }
