@@ -18,7 +18,7 @@ public class FluxoComTratamento {
         System.out.println("Fim do metodo1");
     }
 
-    private static void metodo2() {
+    private static void metodo2() throws MinhaException {
         System.out.println("Ini do metodo2");
         
         // ArithmeticException exception = new ArithmeticException("houve um erro :(");
