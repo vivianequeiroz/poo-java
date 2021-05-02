@@ -2,7 +2,7 @@ public class Conexao implements AutoCloseable {
 
     public Conexao() {
         System.out.println("Abrindo conexão...");
-        throw new IllegalStateException();
+        //throw new IllegalStateException();
         
     }
 
