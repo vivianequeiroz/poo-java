@@ -1,19 +1,28 @@
-import java.util.Random;
+import java.util.Scanner; 
+import java.util.Arrays; 
 
-public class DivisivelPor3E5 {
+  
+public class SomaTresMenores { 
 
-	public static void main(String[] args) {
-		
-		int number; 
-		
-		Random randomNumber = new Random();
-		
-		number = randomNumber.nextInt(100);
-		
-		if((number % 3) == 0 && (number % 5) == 0) {
-			System.out.println("O número " + number + " é divisível por 5 e 3 =)");
-		} else {
-			System.out.println("O número " + number + " não é divisível por 5 e por 3 =(");
-		}	
-	}
-}
+	public static void main(String[] args) { 
+
+		int[] numbers = new int[4]; 
+
+		int sum = 0; 
+ 
+		Scanner scanner = new Scanner(System.in); 	 
+
+		for(int i = 0; i < numbers.length; i++) { 
+			System.out.print("Digite um número: ");  
+			numbers[i] = scanner.nextInt(); 
+		}
+	 
+		Arrays.sort(numbers); 
+
+		for(int i = 0; i < numbers.length - 1; i++) { 
+			sum += numbers[i]; 
+		}
+
+		System.out.println("A soma dos três menores é igual a " + sum + ".");	   
+	} 
+} 
