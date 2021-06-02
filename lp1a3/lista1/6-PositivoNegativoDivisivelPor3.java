@@ -22,5 +22,4 @@ public class PositivoNegativoDivisivelPor3 {
 				System.out.println("E não divisível por 3.");
 			}
 		}
-
 }
