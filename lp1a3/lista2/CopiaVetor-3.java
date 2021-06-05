@@ -15,8 +15,7 @@ public class CopiaVetor {
 		}
 		
 		vet2 = vet1;
-		
-		
+	
 		System.out.println("Seguem os números inseridos no vet1: ");
 		
 		for(int vet: vet1) {
