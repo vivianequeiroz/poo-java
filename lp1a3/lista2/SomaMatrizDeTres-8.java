@@ -1,8 +1,10 @@
-class Main {
+class SumMatrix3 {
   public static void main(String[] args) {
-      int[][] matrix = {{10,15,15},
-                      {10,15,15},
-                      {10,15,15}};
+      int[][] matrix = {
+           {10,15,15},
+           {10,15,15},
+           {10,15,15}
+      };
           
       int total = 0;
 
@@ -10,6 +12,6 @@ class Main {
         total += matrix[i][i];
       }
         
-      System.out.println("A soma da diagonal principal eh " + total);
+      System.out.println("A soma da diagonal principal é: " + total);
   }
 }
