@@ -1,5 +1,5 @@
 
-  class DataHora { 
+  public class DataHora { 
 
     public static void main(String[] args) { 
     SimpleDateFormat fmt = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");    
